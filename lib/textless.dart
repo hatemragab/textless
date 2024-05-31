@@ -1,8 +1,6 @@
 library textless;
 
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 
 class ThemedText extends StatelessWidget {
   const ThemedText({
@@ -24,7 +22,7 @@ class ThemedText extends StatelessWidget {
         maxLines: extra?["maxLine"],
         softWrap: extra?["softWrap"],
         textAlign: extra?["textAlign"],
-        textScaleFactor: extra?["textScaleFactor"]);
+        textScaler: extra?["textScaleFactor"]);
   }
 
   ThemedText textless<T>(T v) =>
